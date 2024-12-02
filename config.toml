@@ -3,66 +3,40 @@ languageCode = "en-us"
 title = "Immersion Teambuilding"
 theme = "lightbi-hugo"
 
-
 # Metadata for SEO and Social Media
-author = "Master Wolf"                 # Author's name
-description = "A stunning site built with Hugo."  # Short site description for meta tags
-keywords = ["hugo", "website", "lightbi-hugo"]    # Keywords for search engines
+author = "Wolf"
+description = "Site hosting Teambuilding company, teambuilding through virtual tabletop rpg games."
+keywords = ["teambuilding", "training", "lightbi-hugo"]
 
 # Content Settings
-paginate = 10                          # Number of posts per page in pagination
-summaryLength = 70                     # Length of summaries in characters
-defaultContentLanguage = "en"          # Default content language
-enableRobotsTXT = true                 # Generate robots.txt for SEO
+paginate = 10
+summaryLength = 150
+defaultContentLanguage = "en"
+enableRobotsTXT = true
 
 # Permalinks
 [permalinks]
-posts = "/blog/:slug/"                 # Customize URL structure for blog posts
+posts = "/blog/:slug/"
 
-# Taxonomies (Categories and Tags)
+# Taxonomies
 [taxonomies]
 category = "categories"
 tag = "tags"
 
 # Social Media Links
 [social]
-twitter = "https://twitter.com/YourHandle"
-github = "https://github.com/YourHandle"
-linkedin = "https://linkedin.com/in/YourProfile"
-
-# Google Analytics (Optional)
-[analytics]
-google = "UA-XXXXXXXXX-X"              # Replace with your Google Analytics ID
+twitter = "https://twitter.com/YourTwitterHandle"
+github = "https://github.com/WolfLycanorcant"
+linkedin = "https://linkedin.com/in/YourLinkedInProfile"
 
 # Sitemap Configuration
 [sitemap]
-changefreq = "weekly"                  # Change frequency (e.g., always, hourly, daily, weekly, monthly)
-priority = 0.5                         # Default priority for all pages
+changefreq = "weekly"
+priority = 0.5
 
 # Enable Syntax Highlighting
 [markup]
 [markup.highlight]
-style = "monokai"                      # Syntax highlighting theme
-lineNos = true                         # Display line numbers
-noClasses = false                      # Use classes for CSS instead of inline styles
-
-# Enable Disqus Comments (Optional)
-[params]
-disqusShortname = "YourDisqusShortname"
-
-# Multilingual Configuration (Optional)
-[languages]
-[languages.en]
-  title = "My New Hugo Site"
-  weight = 1
-[languages.th]                          # Example for a second language (Thai)
-  title = "เว็บไซต์ Hugo ของฉัน"
-  weight = 2
-
-# Deployment Configuration (Optional)
-[deployment]
-[[deployment.targets]]
-name = "production"
-URL = "sftp://yourserver.com"
-user = "yourusername"
-password = "yourpassword"
+style = "monokai"
+lineNos = true
+noClasses = false
