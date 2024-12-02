@@ -1,0 +1,68 @@
+# Basic Settings
+baseURL = "http://example.org/"         # Replace with your actual domain (include trailing /)
+languageCode = "en-us"                 # Language of the site
+title = "My New Hugo Site"             # Site title
+theme = "lightbi-hugo"                 # Theme name
+
+# Metadata for SEO and Social Media
+author = "Master Wolf"                 # Author's name
+description = "A stunning site built with Hugo."  # Short site description for meta tags
+keywords = ["hugo", "website", "lightbi-hugo"]    # Keywords for search engines
+
+# Content Settings
+paginate = 10                          # Number of posts per page in pagination
+summaryLength = 70                     # Length of summaries in characters
+defaultContentLanguage = "en"          # Default content language
+enableRobotsTXT = true                 # Generate robots.txt for SEO
+
+# Permalinks
+[permalinks]
+posts = "/blog/:slug/"                 # Customize URL structure for blog posts
+
+# Taxonomies (Categories and Tags)
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+# Social Media Links
+[social]
+twitter = "https://twitter.com/YourHandle"
+github = "https://github.com/YourHandle"
+linkedin = "https://linkedin.com/in/YourProfile"
+
+# Google Analytics (Optional)
+[analytics]
+google = "UA-XXXXXXXXX-X"              # Replace with your Google Analytics ID
+
+# Sitemap Configuration
+[sitemap]
+changefreq = "weekly"                  # Change frequency (e.g., always, hourly, daily, weekly, monthly)
+priority = 0.5                         # Default priority for all pages
+
+# Enable Syntax Highlighting
+[markup]
+[markup.highlight]
+style = "monokai"                      # Syntax highlighting theme
+lineNos = true                         # Display line numbers
+noClasses = false                      # Use classes for CSS instead of inline styles
+
+# Enable Disqus Comments (Optional)
+[params]
+disqusShortname = "YourDisqusShortname"
+
+# Multilingual Configuration (Optional)
+[languages]
+[languages.en]
+  title = "My New Hugo Site"
+  weight = 1
+[languages.th]                          # Example for a second language (Thai)
+  title = "เว็บไซต์ Hugo ของฉัน"
+  weight = 2
+
+# Deployment Configuration (Optional)
+[deployment]
+[[deployment.targets]]
+name = "production"
+URL = "sftp://yourserver.com"
+user = "yourusername"
+password = "yourpassword"
