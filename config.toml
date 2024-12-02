@@ -1,8 +1,8 @@
-# Basic Settings
-baseURL = "http://example.org/"         # Replace with your actual domain (include trailing /)
-languageCode = "en-us"                 # Language of the site
-title = "My New Hugo Site"             # Site title
-theme = "lightbi-hugo"                 # Theme name
+baseURL = "https://immersionteambuilding.ai/"
+languageCode = "en-us"
+title = "Immersion Teambuilding"
+theme = "lightbi-hugo"
+
 
 # Metadata for SEO and Social Media
 author = "Master Wolf"                 # Author's name
